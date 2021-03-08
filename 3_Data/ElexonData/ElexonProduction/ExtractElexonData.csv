@@ -1,0 +1,15 @@
+
+
+listOWF = readtable('ElexonOWFList.xlsx');
+
+
+fileList = dir;
+
+for i = 1:length(FileList)
+   temptName = split(FileList(i,:), {'_', '.'});
+   
+   farmNameList{i} = temptName{2};
+   
+end
+
+listOWF.GeneratorName{1}
